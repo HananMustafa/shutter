@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 0, 0, 0),
         ),
       ),
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(title: 'Shutter Home Page'),
     );
   }
