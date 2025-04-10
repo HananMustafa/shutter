@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import 'package:flutter_overlay_window/flutter_overlay_window.dart';
 import 'package:shutter/myapp.dart';
 import 'package:shutter/overlayContent.dart';
@@ -27,58 +24,15 @@ void overlayMain() {
 
         child: Stack(
           children: [
-            // Blur effect
-            BackdropFilter(
-              filter: ImageFilter.blur(
-                sigmaX: 10,
-                sigmaY: 10,
-              ), // Blur intensity
-              child: Container(
-                color: Colors.black.withOpacity(0.2), // Optional tint
-              ),
+            Image.asset(
+              'assets/images/shutter.jpg',
+              fit: BoxFit.cover,
+              width: double.infinity,
+              height: double.infinity,
             ),
-
-            // Your overlay content
             OverlayContent(),
           ],
         ),
-
-        // child: ExpandableFab(
-        //   type: ExpandableFabType.fan,
-        //   distance: 60,
-        //   pos: ExpandableFabPos.right,
-        //   fanAngle: 180,
-        //   openButtonBuilder: RotateFloatingActionButtonBuilder(
-        //     child: const Icon(Icons.settings),
-        //     fabSize: ExpandableFabSize.regular,
-        //     foregroundColor: Colors.amber,
-        //     backgroundColor: Colors.green,
-        //     shape: const CircleBorder(),
-        //   ),
-        //   closeButtonBuilder: DefaultFloatingActionButtonBuilder(
-        //     child: const Icon(Icons.close),
-        //     fabSize: ExpandableFabSize.small,
-        //     foregroundColor: Colors.deepOrangeAccent,
-        //     backgroundColor: Colors.lightGreen,
-        //     shape: const CircleBorder(),
-        //   ),
-        //   children: [
-        //     // FloatingActionButton.small(
-        //     //   heroTag: null,
-        //     //   child: const Icon(Icons.edit),
-        //     //   onPressed: () {},
-        //     // ),
-        //     // FloatingActionButton.small(
-        //     //   heroTag: null,
-        //     //   child: const Icon(Icons.search),
-        //     //   onPressed: () {},
-        //     // ),
-        //     IconButton(
-        //       onPressed: () {},
-        //       icon: const Icon(Icons.share, size: 30),
-        //     ),
-        //   ],
-        // ),
       ),
     ),
   );
