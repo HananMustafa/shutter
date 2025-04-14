@@ -35,8 +35,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_overlay_window: ^0.4.5 #call overlay
-  top_modal_sheet: ^2.1.0 #top sheet
-  flutter_expandable_fab: ^2.4.1 #floating action button
 
 
 dev_dependencies:

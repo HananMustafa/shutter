@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
             if (await FlutterOverlayWindow.isActive()) {
               FlutterOverlayWindow.closeOverlay();
             } else {
-              FlutterOverlayWindow.showOverlay(enableDrag: true, width: 900);
+              FlutterOverlayWindow.showOverlay(enableDrag: true, width: 1800);
             }
           },
           child: Text('Turn On'),

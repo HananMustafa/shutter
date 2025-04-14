@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Shutter Home Page'),
+      home: const MyHomePage(title: 'Shutter'),
     );
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_overlay_window/flutter_overlay_window.dart';
 import 'package:shutter/myapp.dart';
-import 'package:shutter/overlayContent.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +29,6 @@ void overlayMain() {
               width: double.infinity,
               height: double.infinity,
             ),
-            OverlayContent(),
           ],
         ),
       ),
