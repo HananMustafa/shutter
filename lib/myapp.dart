@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Shutter',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 0, 0, 0),
+          seedColor: const Color.fromRGBO(209, 213, 219, 1),
         ),
       ),
       debugShowCheckedModeBanner: false,
