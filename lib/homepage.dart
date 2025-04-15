@@ -23,26 +23,6 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
   }
 
-  // void iniOverlay() {
-  //   WidgetsBinding.instance.addPostFrameCallback((_) {
-  //     double screenWidth = MediaQuery.of(context).size.width;
-  //     double screenHeight = MediaQuery.of(context).size.height;
-
-  //     print('DEVICE WIDTH: $screenWidth');
-  //     print('DEVICE HEIGHT: $screenHeight');
-
-  //     if (screenWidth < 500) {
-  //       screenWidth += 400;
-  //     } else if (screenWidth < 1000) {
-  //       screenWidth += 750;
-  //     } else {
-  //       screenWidth += 1500;
-  //     }
-
-  //     FlutterOverlayWindow.showOverlay(enableDrag: true);
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,22 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        // child: ElevatedButton(
-        //   onPressed: () async {
-        //     if (await FlutterOverlayWindow.isActive()) {
-        //       FlutterOverlayWindow.closeOverlay();
-        //       setState(() {
-        //         isOverlayActive = false;
-        //       });
-        //     } else {
-        //       FlutterOverlayWindow.showOverlay(enableDrag: true, width: 2580);
-        //       setState(() {
-        //         isOverlayActive = true;
-        //       });
-        //     }
-        //   },
-        //   child: Text(isOverlayActive ? 'Turn Off' : 'Turn On'),
-        // ),
         child: GestureDetector(
           onTap: () async {
             if (await FlutterOverlayWindow.isActive()) {
