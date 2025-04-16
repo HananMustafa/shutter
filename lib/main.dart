@@ -23,11 +23,16 @@ void overlayMain() {
 
         child: Stack(
           children: [
-            Image.asset(
-              'assets/images/shutter.jpg',
-              fit: BoxFit.cover,
-              width: double.infinity,
-              height: double.infinity,
+            GestureDetector(
+              child: Image.asset(
+                'assets/images/shutter.jpg',
+                fit: BoxFit.cover,
+                width: double.infinity,
+                height: double.infinity,
+              ),
+              onDoubleTap: () {
+                FlutterOverlayWindow.closeOverlay();
+              },
             ),
           ],
         ),
